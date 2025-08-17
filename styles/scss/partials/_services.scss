@@ -1,0 +1,8 @@
+@use'variables' as *;
+
+#services{
+    // height: 1vh;
+    margin-top: 3rem;
+    background: linear-gradient($primaryColor, $secondaryColor);
+    display: none;
+}

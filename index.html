@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="/portfolio/assets/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/css/main.min.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-items">
+                    <div class="logo">
+                        <span>K</span>en.
+                    </div>
+                    <ul class="main-menu" > <!-- The inert attribute disables all interactivity/focus inside an element-->
+                        <li tabindex="2">Products</li>
+                        <li tabindex="3">Home</li>
+                        <li tabindex="4">About</li>
+                        <li tabindex="5">Contacts</li>
+                        <li tabindex="6"><a href="#services">Services</a></li>
+                    </ul>
+                    <div class="menu-toggler" tabindex="1">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-modal-container hidden"></div>
+
+    <main class="container">
+        <section class="portfolio">
+            <h2>Hi, I'm Ken Ngugi</h2>
+            <p id="dev">Frontend Developer</p>
+            <div class="details">
+                <p id="personal-statement"></p>
+                <div class="photo">
+                    <img src="/portfolio/assets/images/Ken.jpg">
+                </div>
+            <div class="buttons-socials">
+                <div class="buttons">
+                    <button tabindex="7">Hire Me</button>
+                    <button tabindex="8">Let's Talk</button>
+                </div>
+    
+                <div class="socials">
+                    <i class="fab fa-twitter" tabindex="9"></i>
+                    <i class="fab fa-facebook-f" tabindex="10"></i>
+                    <i class="fab fa-linkedin-in" tabindex="11"></i>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <section id="services">
+        <h1>Services</h1>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="copyright">
+                &copy; Ken Ngugi <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

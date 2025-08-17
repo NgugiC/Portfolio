@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+.menu-toggler{        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    cursor: pointer;
+
+    .line{
+        border-bottom: 4px solid $primaryColor;
+        width: 2rem;
+        border-radius: 4rem;
+
+        &.line-1,&.line-2,&.line-3{
+            transition: $myTransition;
+        }
+    }
+}
+
+.menu-visible{
+    
+    &.main-menu{
+            right: -5vw !important;
+    }
+
+    .line{
+        
+        &.line-1{
+            transform: rotate(-40deg) skewX(70deg);
+            transform-origin: 120%;
+        }
+        &.line-2{
+            width: 0;
+        }
+        &.line-3{
+            transform-origin: 50%;
+            transform: rotate(40deg) translateY(-8px) skewX(-70deg);
+        }
+    }
+}
+
+a{
+    color: $lightColor;
+
+    &:active{
+        color: $secondaryColor;
+    }
+}
+
+.hidden{
+    display: none;
+}
